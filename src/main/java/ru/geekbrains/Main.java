@@ -15,7 +15,6 @@ public class Main {
                 .buildSessionFactory();
 
         EntityManager em = emFactory.createEntityManager();
-
         AbstractRepository <Student> repository = new AbstractRepository(emFactory);
 
         Student student = new Student("student1",4);
@@ -40,6 +39,5 @@ public class Main {
 //
 //        List<Student> studentList = repository.findAll();
 //        System.out.println(studentList);
-
     }
 }
